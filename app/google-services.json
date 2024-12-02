@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211010365131",
+    "project_id": "lab-10-f630c",
+    "storage_bucket": "lab-10-f630c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211010365131:android:10608d0821552090bd5d4e",
+        "android_client_info": {
+          "package_name": "com.farhan.lab_10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbkmdqRRF3DAHA8Exbh75-O5no-icjwJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

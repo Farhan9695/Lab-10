@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:src="@drawable/firebase"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Full Name:"/>
+
+    <EditText
+        android:id="@+id/reg_nameEditText"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:hint="Enter your full name"
+        android:textColorHint="#dbe2e9"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="City:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/reg_cityEditText"
+        android:hint="Enter your city"
+        android:textColorHint="#dbe2e9"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Country:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/reg_countryEditText"
+        android:hint="Enter your country"
+        android:textColorHint="#dbe2e9"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Phone Number:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/reg_phoneEditText"
+        android:inputType="phone"
+        android:hint="Enter your phone number"
+        android:textColorHint="#dbe2e9"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Email Address:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/reg_emailEditText"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email address"
+        android:textColorHint="#dbe2e9"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Password:"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/reg_passwordEditText"
+        android:inputType="textPassword"
+        android:hint="Enter your password"
+        android:textColorHint="#dbe2e9"/>
+    
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/signupButton"
+        android:layout_gravity="center"
+        android:backgroundTint="#000000"
+        android:text="Sign Up"
+        android:textSize="15sp"/>
+
+</LinearLayout>
