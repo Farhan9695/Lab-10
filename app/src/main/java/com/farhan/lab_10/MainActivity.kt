@@ -76,12 +76,10 @@ class MainActivity : AppCompatActivity() {
                                     }
                                 }
                         }
-
-                        binding.registerButton.setOnClickListener {
+                    }
+                    binding.registerButton.setOnClickListener {
                             val intent = Intent(this, SignUpActivity::class.java)
                             startActivity(intent)
-                        }
-
                     }
                 }
             }
