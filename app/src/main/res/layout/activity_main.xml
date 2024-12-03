@@ -10,65 +10,63 @@
     android:button="@style/Widget.AppCompat.Button"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="10dp"
-        android:textSize="36sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="@font/lunery"
-        android:text="Welcome to Firebase"
-        android:layout_gravity="center"/>
-
     <ImageView
         android:layout_width="240dp"
         android:layout_height="140dp"
         android:src="@drawable/firebase"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="140dp"
         android:backgroundTint="@color/white"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
         android:text="Email Address:"/>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
         android:textColor="@color/white"
         android:hint="Enter your email address"
         android:inputType="textEmailAddress"
+        android:background="@drawable/rectangle_shape"
+        android:layout_marginLeft="19dp"
         android:id="@+id/emailEditText"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
         android:textColor="@color/white"
         android:text="Password:"/>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
         android:inputType="textPassword"
         android:textColor="@color/white"
+        android:layout_marginLeft="19dp"
+        android:background="@drawable/rectangle_shape"
         android:hint="Enter your password"
         android:id="@+id/passwordEditText"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/loginButton"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:backgroundTint="#ffffff"
+        android:backgroundTint="#ff4123"
         android:text="Login"/>
 
     <Button
@@ -76,9 +74,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:id="@+id/forgotPasswordButton"
+        android:textColor="@color/black"
+        android:text="Forgot Password?"
+        android:backgroundTint="#cbc133"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:id="@+id/registerButton"
-        android:textColor="@color/white"
-        android:backgroundTint="#000000"
+        android:textColor="@color/black"
+        android:backgroundTint="#b66311"
         android:text="No account? Register now"/>
+
 
 </LinearLayout>

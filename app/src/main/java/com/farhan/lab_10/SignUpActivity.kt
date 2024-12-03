@@ -1,5 +1,6 @@
 package com.farhan.lab_10
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -31,8 +32,8 @@ class SignUpActivity : AppCompatActivity() {
             val email = binding.regEmailEditText.text.toString()
             val password = binding.regPasswordEditText.text.toString()
             auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this){task ->
-                    if (task.isSuccessful){
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
 
                         val newPerson = hashMapOf(
                             "name" to binding.regNameEditText.text.toString().trim(),
@@ -45,16 +46,37 @@ class SignUpActivity : AppCompatActivity() {
                         db.collection("users")
                             .document(auth.currentUser!!.uid)
                             .set(newPerson)
-                        Snackbar.make(binding.root, "Successfully Registered",
-                            Snackbar.LENGTH_LONG).show()
+                        Snackbar.make(
+                            binding.root, "Successfully Registered",
+                            Snackbar.LENGTH_LONG
+                        ).show()
                         finish()
+                    } else {
+                        Snackbar.make(
+                            binding.root, "Registration Failed",
+                            Snackbar.LENGTH_LONG
+                        ).show()
                     }
-                    else {
-                        Snackbar.make(binding.root, "Registration Failed",
-                            Snackbar.LENGTH_LONG).show()
-                    }
-                    }
+                }
 
+        }
+
+        binding.signupButton.setOnClickListener {
+
+            val intent = Intent(this, ProfileActivity::class.java)
+            intent.putExtra("email", binding.regEmailEditText.text.toString())
+            intent.putExtra("password", binding.regPasswordEditText.text.toString())
+            intent.putExtra("name", binding.regNameEditText.text.toString())
+            intent.putExtra("city", binding.regCityEditText.text.toString())
+            intent.putExtra("country", binding.regCountryEditText.text.toString())
+            intent.putExtra("phone", binding.regPhoneEditText.text.toString())
+
+            startActivity(intent)
+
+        }
+        binding.signupButton.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 }

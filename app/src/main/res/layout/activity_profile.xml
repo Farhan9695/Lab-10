@@ -1,10 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".ProfileActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="40sp"
+        android:text="Your Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Full Name:"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/nameTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="City:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/cityTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Country:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/countryTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Phone Number:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/phoneNumberTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Email Address:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/emailTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="0.05"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Password:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:id="@+id/passwordTextView"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Back to login page"
+        android:layout_gravity="center"
+        android:id="@+id/backButton"
+        android:backgroundTint="@color/black"/>
+
+</LinearLayout>
