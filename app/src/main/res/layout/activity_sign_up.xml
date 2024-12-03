@@ -32,7 +32,8 @@
         android:layout_height="40dp"
         android:layout_marginLeft="2dp"
         android:hint="Enter your full name"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_marginLeft="5dp"
@@ -49,7 +50,8 @@
         android:layout_marginLeft="2dp"
         android:id="@+id/reg_cityEditText"
         android:hint="Enter your city"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_marginLeft="5dp"
@@ -66,7 +68,8 @@
         android:layout_marginLeft="2dp"
         android:id="@+id/reg_countryEditText"
         android:hint="Enter your country"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_marginLeft="5dp"
@@ -84,7 +87,8 @@
         android:id="@+id/reg_phoneEditText"
         android:inputType="phone"
         android:hint="Enter your phone number"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_marginLeft="5dp"
@@ -102,7 +106,8 @@
         android:id="@+id/reg_emailEditText"
         android:inputType="textEmailAddress"
         android:hint="Enter your email address"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_marginLeft="5dp"
@@ -120,15 +125,18 @@
         android:id="@+id/reg_passwordEditText"
         android:inputType="textPassword"
         android:hint="Enter your password"
-        android:textColorHint="#dbe2e9"/>
+        android:textColorHint="#dbe2e9"
+        android:alpha="0.3"/>
     
     <Button
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:id="@+id/signupButton"
         android:layout_gravity="center"
-        android:backgroundTint="#000000"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="30dp"
         android:text="Sign Up"
+        android:textStyle="bold"
         android:textSize="15sp"/>
 
 </LinearLayout>
