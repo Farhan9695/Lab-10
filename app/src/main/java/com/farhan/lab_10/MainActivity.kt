@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                             auth.signInWithEmailAndPassword(email, password)
                                 .addOnCompleteListener(this) { task ->
                                     if (task.isSuccessful) {
-                                        val intent = Intent(this, ProfileActivity::class.java)
+                                        val intent = Intent(this, DashboardActivity::class.java)
                                         startActivity(intent)
                                         Snackbar.make(
                                             binding.root, "Login Successful",
