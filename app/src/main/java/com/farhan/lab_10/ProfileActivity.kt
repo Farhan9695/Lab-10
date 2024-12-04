@@ -14,8 +14,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfileBinding
-    private lateinit var auth: FirebaseAuth
-    private lateinit var db: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +24,7 @@ class ProfileActivity : AppCompatActivity() {
         binding.nameTextView.text = intent.getStringExtra("name")
         binding.cityTextView.text = intent.getStringExtra("city")
         binding.countryTextView.text = intent.getStringExtra("country")
-        binding.phoneNumberTextView.text = intent.getStringExtra("phoneNumber")
+        binding.phoneNumberTextView.text = intent.getStringExtra("phone")
         binding.emailTextView.text = intent.getStringExtra("email")
         binding.passwordTextView.text = intent.getStringExtra("password")
 
