@@ -29,6 +29,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.signupButton.setOnClickListener {
+
             val email = binding.regEmailEditText.text.toString()
             val password = binding.regPasswordEditText.text.toString()
             auth.createUserWithEmailAndPassword(email, password)
@@ -58,11 +59,6 @@ class SignUpActivity : AppCompatActivity() {
                         ).show()
                     }
                 }
-
-        }
-
-        binding.signupButton.setOnClickListener {
-
             val intent = Intent(this, ProfileActivity::class.java)
             intent.putExtra("email", binding.regEmailEditText.text.toString())
             intent.putExtra("password", binding.regPasswordEditText.text.toString())
@@ -70,13 +66,8 @@ class SignUpActivity : AppCompatActivity() {
             intent.putExtra("city", binding.regCityEditText.text.toString())
             intent.putExtra("country", binding.regCountryEditText.text.toString())
             intent.putExtra("phone", binding.regPhoneEditText.text.toString())
-
-            startActivity(intent)
-
-        }
-        binding.signupButton.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
     }
 }
+
